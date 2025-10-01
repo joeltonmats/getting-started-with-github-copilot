@@ -21,8 +21,9 @@
         </div>
       </section>
 
-      <section id="signup-container">
+      <section id="signup-container" class="signup-panel" aria-label="Sign up">
         <h3>Sign Up for an Activity</h3>
+        <p class="sub">Adicione um estudante a uma atividade. Campos requeridos estão marcados.</p>
         <form id="signup-form">
           <div class="form-group">
             <label for="email">Student Email:</label>
@@ -35,7 +36,10 @@
               <!-- Activity options will be loaded here -->
             </select>
           </div>
-          <button type="submit">Sign Up</button>
+          <div class="form-actions">
+            <button type="submit" class="primary">Sign Up</button>
+            <!-- <button type="button" class="secondary">Cancel</button> optional -->
+          </div>
         </form>
         <div id="message" class="hidden"></div>
       </section>
